@@ -2,7 +2,7 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Helloworld < Formula
-  desc ""
+  desc "Danny's test helloworld"
   homepage ""
   url "https://github.com/XDanny322/app-helloworld/archive/refs/tags/0.0.1.tar.gz"
   sha256 "758708bc2908c2d62442a62a0e97cc22abc06b1c509e455527bd67dbdf3f5a0f"
