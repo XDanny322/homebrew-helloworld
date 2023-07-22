@@ -17,7 +17,8 @@ class Helloworld < Formula
     # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
 
-    prefix.install "dlaitest_homebrew_script"
+    # prefix.install "dlaitest_homebrew_script"
+    bin.install "dlaitest_homebrew_script"
   end
 
   test do
