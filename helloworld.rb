@@ -14,8 +14,10 @@ class Helloworld < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "./configure", *std_configure_args, "--disable-silent-rules"
+    # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+
+    prefix.install "dlaitest_homebrew_script"
   end
 
   test do
@@ -30,9 +32,4 @@ class Helloworld < Formula
     # executables being tested: `system "#{bin}/program", "do", "something"`.
     system "false"
   end
-
-  def install
-    bin.install 'dlaitest_homebrew_script'
-  end
-
 end
