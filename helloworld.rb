@@ -19,6 +19,8 @@ class Helloworld < Formula
 
     # prefix.install "dlaitest_homebrew_script"
     bin.install "dlaitest_homebrew_script"
+    bash_completion.install "completions/dlaitest_homebrew_script.bash" => "dlaitest_homebrew_script"
+    zsh_completion.install "completions/dlaitest_homebrew_script.zsh" => "_dlaitest_homebrew_script"
   end
 
   test do
