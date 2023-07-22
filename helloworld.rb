@@ -30,4 +30,9 @@ class Helloworld < Formula
     # executables being tested: `system "#{bin}/program", "do", "something"`.
     system "false"
   end
+
+  def install
+    bin.install 'dlaitest_homebrew_script'
+  end
+
 end
