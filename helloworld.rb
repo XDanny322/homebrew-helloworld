@@ -4,8 +4,8 @@
 class Helloworld < Formula
   desc "some dest"
   homepage "https://google.com"
-  url "https://github.com/XDanny322/app-helloworld/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "758708bc2908c2d62442a62a0e97cc22abc06b1c509e455527bd67dbdf3f5a0f"
+  url "https://github.com/XDanny322/app-helloworld/archive/refs/tags/0.0.2.tar.gz"
+  sha256 "2dd97be278c0ffc96831454f6226a845bf79484df4a5bd772c94c9adf9af6660"
   license "MIT"
 
   # depends_on "cmake" => :build
@@ -17,6 +17,7 @@ class Helloworld < Formula
     # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
     bin.install "dlaitest_homebrew_script"
+    # prefix.install_symlink etc/"observiq_config.yaml" => "config.yaml"
   end
 
   test do
