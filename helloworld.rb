@@ -17,7 +17,7 @@ class Helloworld < Formula
     # system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
     bin.install "dlaitest_homebrew_script"
-    # prefix.install_symlink etc/"observiq_config.yaml" => "config.yaml"
+    prefix.install_symlink "dlaitest_homebrew_script"
   end
 
   test do
